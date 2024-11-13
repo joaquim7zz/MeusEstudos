@@ -1,4 +1,15 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+void limpaTela()
+{
+#ifdef _WIN32
+    system("cls");
+#else
+    system("clear");
+#endif
+}
+
 
 int main()
 {
@@ -17,6 +28,8 @@ int main()
         printf("[ 1 TABUADA ] [2 CALCULADORA ] [ 3 FATORIAL ] \n");
         scanf("%d", &funcao);
         printf("------------------------------ \n");
+
+        limpaTela();
 
         while (funcao < 1 || funcao > 3)
         {
@@ -82,7 +95,7 @@ int main()
         else if (funcao == 3)
         {
 
-            printf("Digite um numero inteiro para calcular o fatorial: ");
+            printf("Digite um numero inteiro para calcular o fatorial: \n");
             scanf("%d", &numf);
 
             while (numf < 0)
@@ -101,6 +114,8 @@ int main()
 
         printf("Deseja realizar outra operacao? (s/n): ");
         scanf(" %c", &continuar);
+
+        limpaTela();
 
     } while (continuar == 's' || continuar == 'S');
 
