@@ -1,2 +1,3 @@
-# estudos_ti
-Todas as Linguagens que eu já estudei (estou estudando)
+# estudos de Tecnologia e Informação 
+
+Um cérebro virtual pra um dev esquecido
