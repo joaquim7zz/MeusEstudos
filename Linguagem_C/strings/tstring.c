@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>
+#include <string.h> // Biblioteca para manipular strings
 
 int main ()
 {
