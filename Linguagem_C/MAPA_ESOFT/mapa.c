@@ -37,7 +37,8 @@ int main()
         system("cls");
         printf("MAPA Linguagen e técnicas de Programação \n");
         printf("=============================================== \n");
-        printf("==============SISTEMA DE RESERVAS==============\n");
+        printf("=             SISTEMA DE RESERVAS             =\n");
+        printf("=============================================== \n");
         exibirMenu(); // Mostra o menu de opções
         scanf("%d", &opcao);
 
@@ -82,8 +83,11 @@ void exibirMenu()
 
 void fazerReserva(struct reserva reservas[], int *totalReservas)
 {
+    int contPessoas;
+
     if (*totalReservas >= maxReservas)
     {
+        system("cls");
         printf("Capacidade máxima de reservas atingida! \n");
         system("pause");
         return;
@@ -91,8 +95,9 @@ void fazerReserva(struct reserva reservas[], int *totalReservas)
 
     struct reserva novaReserva;
 
+    system("cls");
     printf("Digite o nome do responsável: \n");
-    getchar(); // Consome o '\n' residual
+    getchar(); 
     fgets(novaReserva.nome, sizeof(novaReserva.nome), stdin);
     novaReserva.nome[strcspn(novaReserva.nome, "\n")] = '\0';
     printf("Digite o CPF: \n");
@@ -105,6 +110,7 @@ void fazerReserva(struct reserva reservas[], int *totalReservas)
         scanf("%d", &novaReserva.dia);
         if (novaReserva.dia < 1 || novaReserva.dia > 4)
         {
+            system("cls");
             printf("Dia inválido. Tente novamente.\n");
         }
 
@@ -114,9 +120,9 @@ void fazerReserva(struct reserva reservas[], int *totalReservas)
     {
         printf("Digite a quantidade de pessoas: \n");
         scanf("%d", &novaReserva.qtdPessoas);
-
         if (novaReserva.qtdPessoas <= 0 || novaReserva.qtdPessoas > 10)
         {
+            system("cls");
             printf("Você pode reservar de 1 a 10 cadeiras. Tente novamente.\n");
         }
 
@@ -125,12 +131,14 @@ void fazerReserva(struct reserva reservas[], int *totalReservas)
     reservas[*totalReservas] = novaReserva;
     (*totalReservas)++;
 
+    system("cls");
     printf("Reserva cadastrada com sucesso! \n");
     system("pause");
 }
 
 void listarReservas(struct reserva reservas[], int totalReservas)
 {
+    system("cls");
     char *dias[] = {"", "Quinta", "Sexta", "Sábado", "Domingo"};
 
     if (totalReservas == 0)
@@ -144,6 +152,7 @@ void listarReservas(struct reserva reservas[], int totalReservas)
             printf("\nNome: %s\n", reservas[i].nome);
             printf("CPF: %s \n", reservas[i].cpf);
             printf("Dia: %s \n", dias[reservas[i].dia]);
+            
             printf("Número de pessoas: %d \n", reservas[i].qtdPessoas);
             printf("===============================\n");
         }
@@ -176,6 +185,7 @@ void totalPessoasPorDia(struct reserva reservas[], int totalReservas)
         }
     }
 
+    system("cls");
     if (totalPessoas > 0)
     {
         printf("Total de pessoas para o dia %s: %d \n", dias[dia], totalPessoas);
