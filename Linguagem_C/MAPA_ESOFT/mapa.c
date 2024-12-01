@@ -35,17 +35,17 @@ int main()
     do
     {
         system("cls");
-        printf("MAPA Linguagen e técnicas de Programação \n");
+        printf("MAPA Linguagem e técnicas de Programação \n");
         printf("=============================================== \n");
         printf("=             SISTEMA DE RESERVAS             =\n");
         printf("=============================================== \n");
-        exibirMenu(); // Mostra o menu de opções
+        exibirMenu();
         scanf("%d", &opcao);
 
         while (opcao < 1 || opcao > 4)
         {
             system("cls");
-            printf("Digite uma opção válida: [1] [2] [3] [4] \n");
+            printf("Por favor, escolha uma opção válida: [1] [2] [3] [4] \n");
             exibirMenu();
             scanf("%d", &opcao);
         }
@@ -83,7 +83,6 @@ void exibirMenu()
 
 void fazerReserva(struct reserva reservas[], int *totalReservas)
 {
-    int contPessoas;
 
     if (*totalReservas >= maxReservas)
     {
@@ -96,17 +95,18 @@ void fazerReserva(struct reserva reservas[], int *totalReservas)
     struct reserva novaReserva;
 
     system("cls");
+    getchar();
     printf("Digite o nome do responsável: \n");
-    getchar(); 
     fgets(novaReserva.nome, sizeof(novaReserva.nome), stdin);
     novaReserva.nome[strcspn(novaReserva.nome, "\n")] = '\0';
+    
     printf("Digite o CPF: \n");
     fgets(novaReserva.cpf, sizeof(novaReserva.cpf), stdin);
     novaReserva.cpf[strcspn(novaReserva.cpf, "\n")] = '\0';
 
     do
     {
-        printf("Digite o dia da reserva (1 - Quinta, 2 - Sexta, 3 - Sábado, 4 - Domingo): ");
+        printf("Digite o dia da reserva (1 - Quinta, 2 - Sexta, 3 - Sábado, 4 - Domingo): \n");
         scanf("%d", &novaReserva.dia);
         if (novaReserva.dia < 1 || novaReserva.dia > 4)
         {
@@ -138,8 +138,9 @@ void fazerReserva(struct reserva reservas[], int *totalReservas)
 
 void listarReservas(struct reserva reservas[], int totalReservas)
 {
+    int i;
     system("cls");
-    char *dias[] = {"", "Quinta", "Sexta", "Sábado", "Domingo"};
+  const char *dias[] = {"", "Quinta", "Sexta", "Sábado", "Domingo"};
 
     if (totalReservas == 0)
     {
@@ -147,7 +148,7 @@ void listarReservas(struct reserva reservas[], int totalReservas)
     }
     else
     {
-        for (int i = 0; i < totalReservas; i++)
+        for (i = 0; i < totalReservas; i++)
         {
             printf("\nNome: %s\n", reservas[i].nome);
             printf("CPF: %s \n", reservas[i].cpf);
@@ -162,22 +163,24 @@ void listarReservas(struct reserva reservas[], int totalReservas)
 
 void totalPessoasPorDia(struct reserva reservas[], int totalReservas)
 {
-    int dia, totalPessoas = 0;
+	system("cls");
+	
+    int i, dia, totalPessoas = 0;
 
-    char *dias[] = {"", "Quinta", "Sexta", "Sábado", "Domingo"};
+    const char *dias[] = {"", "Quinta", "Sexta", "Sábado", "Domingo"};
 
-    printf("Digite o dia para calcular o total de pessoas (1 - Quinta, 2 - Sexta, 3 - Sábado, 4 - Domingo): ");
+    printf("Digite o dia para calcular o total de pessoas (1 - Quinta, 2 - Sexta, 3 - Sábado, 4 - Domingo): \n");
     scanf("%d", &dia);
 
     while (dia < 1 || dia > 4)
     {
         system("cls");
-        printf("Digite uma opção válida: [1] [2] [3] [4] \n");
+        printf("Por favor, escolha uma opção válida: [1] [2] [3] [4] \n");
         exibirMenu();
         scanf("%d", &dia);
     }
 
-    for (int i = 0; i < totalReservas; i++)
+    for (i = 0; i < totalReservas; i++)
     {
         if (reservas[i].dia == dia)
         {
