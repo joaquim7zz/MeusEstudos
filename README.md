@@ -8,6 +8,7 @@ Este repositório é minha central de aprendizado e experimentação. Ele serve 
 ## 💡 Legenda
 | Sigla   | Descrição                                   |
 |---------|---------------------------------------------|
+| **ONE** |  ONE - Oracle Next Education (G8) w/alura
 | **UNI** | Assuntos do curso de Engenharia de Software |
 | **CEV** | Curso em Vídeo                              |
 | **OneBit** | OneBitCode                               |
