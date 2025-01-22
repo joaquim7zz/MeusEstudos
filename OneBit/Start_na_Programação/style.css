@@ -16,7 +16,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 80px 24px 80px;
+    padding: 24px 80px;
 }
 
 header a {
@@ -130,8 +130,19 @@ header a:hover {
     border-left: 1px solid #FF725e;
     border-radius: 0 0 8px 8px;
     margin-top: -8px;
+    padding: 0 24px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.duvida.ativa .paragrafo {
+    height: fit-content;
+    opacity: 1;
     padding: 24px;
 }
+
 
 footer {
     justify-content: space-between;
