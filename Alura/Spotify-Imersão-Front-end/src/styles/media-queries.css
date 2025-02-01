@@ -1,0 +1,13 @@
+@media screen and (max-width: 1190px){
+    .offer__list-item {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+} @media screen and (max-width: 1140px){
+    .offer__list-item {
+        grid-template-columns: 1fr 1fr;
+    }
+} @media screen and (max-width: 900px){
+    .offer__list-item {
+        grid-template-columns: 1fr;
+    }
+}
