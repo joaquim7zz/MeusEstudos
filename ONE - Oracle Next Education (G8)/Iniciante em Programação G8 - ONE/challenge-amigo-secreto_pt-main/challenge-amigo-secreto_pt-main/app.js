@@ -5,12 +5,12 @@ function adicionarAmigo() {
   let nome = inputAmigo.value.trim();
 
   if (nome === '') {
-    exibirTexto('h2', 'Por favor, insira um nome válido.');
+    exibirTexto('h2', '[ERRO] Por favor, insira um nome válido.');
     return;
   }
 
   if (nomeAmigos.includes(nome)) {
-    exibirTexto('h2','Nome já adicionado!');
+    exibirTexto('h2','[ERRO] Nome já adicionado!');
     return;
   }
 
@@ -18,14 +18,17 @@ function adicionarAmigo() {
   nomeAmigos.push(nome);
   atualizarListaAmigos();
   inputAmigo.value = '';
+  textoNaTela();
 }
 
 function reiniciar() {
   nomeAmigos = [];
+  
   atualizarListaAmigos();
   limparMensagem();
   let resultado = document.getElementById('resultado');
   resultado.innerHTML = '';
+  textoNaTela();
 }
 
 function atualizarListaAmigos() {
@@ -40,9 +43,9 @@ function atualizarListaAmigos() {
 }
 
 function sortearAmigo() {
-  if (nomeAmigos.length < 1) {
-    exibirTexto('h2', 'Adicione pelo menos dois nomes para sortear.');
-    msg.classList.add('erro');
+  if (nomeAmigos.length < 2) {
+    exibirTexto('h2', '[ERRO] Adicione pelo menos dois nomes para sortear.');
+
     return;
   }
 

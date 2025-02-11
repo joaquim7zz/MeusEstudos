@@ -153,6 +153,7 @@ ul {
     font-family: "Inter", sans-serif;
     font-size: 18px;
     margin: 20px 0;
+
 }
 
 .result-list {
@@ -160,19 +161,8 @@ ul {
     color: #05DF05;
     font-size: 22px;
     font-weight: bold;
-    text-align: center;
-}
+    margin-left: 20px;
 
-/* Mensagem de erro */
-.erro {
-
-    margin-top: 2%;
-    color: black;
-    font-family: "Inter", sans-serif;
-    background-color: #e55720;
-    border: 3px solid black;
-    padding: 10px;
-    border-radius: 6px;
 }
 
 /* Responsividade */
