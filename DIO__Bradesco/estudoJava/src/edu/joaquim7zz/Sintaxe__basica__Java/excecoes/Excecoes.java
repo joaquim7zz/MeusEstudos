@@ -1,4 +1,4 @@
-package edu.joaquim7zz.excecoes;
+package edu.joaquim7zz.Sintaxe__basica__Java.excecoes;
 
 import java.util.InputMismatchException;
 import java.util.Locale;

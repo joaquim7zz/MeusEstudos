@@ -1,4 +1,4 @@
-package edu.joaquim7zz.estruturas_de_repeticao;
+package edu.joaquim7zz.Sintaxe__basica__Java.estruturas_de_repeticao;
 
 
 import java.util.Random;

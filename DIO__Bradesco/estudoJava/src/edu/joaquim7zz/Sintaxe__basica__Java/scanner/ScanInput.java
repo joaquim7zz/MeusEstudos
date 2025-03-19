@@ -1,4 +1,4 @@
-package edu.joaquim7zz.scanner;
+package edu.joaquim7zz.Sintaxe__basica__Java.scanner;
 
 import java.util.Scanner; // Importação da classe Scanner
 

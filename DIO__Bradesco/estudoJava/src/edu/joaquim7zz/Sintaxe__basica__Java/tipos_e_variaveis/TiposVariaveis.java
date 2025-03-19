@@ -1,4 +1,4 @@
-package edu.joaquim7zz.tipos_e_variaveis;
+package edu.joaquim7zz.Sintaxe__basica__Java.tipos_e_variaveis;
 
 public class TiposVariaveis {
     public static void main(String[] args) {

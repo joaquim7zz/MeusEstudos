@@ -1,4 +1,4 @@
-package edu.joaquim7zz.intro_estruturas_condicionais;
+package edu.joaquim7zz.Sintaxe__basica__Java.intro_estruturas_condicionais;
 
 public class CondicionalEncadeada {
     public static void main(String[] args) {

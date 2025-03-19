@@ -1,4 +1,5 @@
-package edu.joaquim7zz.anatomia_das_classes;
+package edu.joaquim7zz.Sintaxe__basica__Java.anatomia_das_classes;
+
 
 public class Boletim {
     public static void main(String[] args) {

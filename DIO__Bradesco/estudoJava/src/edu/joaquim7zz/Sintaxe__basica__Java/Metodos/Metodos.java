@@ -1,4 +1,4 @@
-package edu.joaquim7zz.Metodos;
+package edu.joaquim7zz.Sintaxe__basica__Java.Metodos;
 
 public class Metodos {
     public static void main(String[] args) {

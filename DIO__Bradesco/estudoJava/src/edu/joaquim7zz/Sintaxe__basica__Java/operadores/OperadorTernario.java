@@ -1,4 +1,4 @@
-package edu.joaquim7zz.operadores;
+package edu.joaquim7zz.Sintaxe__basica__Java.operadores;
 
 public class OperadorTernario {
     public static void main(String[] args) {
