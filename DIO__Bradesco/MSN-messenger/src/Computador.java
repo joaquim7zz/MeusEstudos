@@ -14,7 +14,7 @@ public class Computador {
 
         if (appEscolhido.equals("msn")) {
             smi = new MSNMessenger();
-        } else if (appEscolhido.equals("fc")) {
+        } else if (appEscolhido.equals("fcb")) {
             smi = new Facebook();
         } else if (appEscolhido.equals("tlg")) {
             smi = new Telegram();
