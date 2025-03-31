@@ -16,7 +16,7 @@ public class Computador {
             smi = new MSNMessenger();
         } else if (appEscolhido.equals("fc")) {
             smi = new Facebook();
-        } else if (appEscolhido.equals("te")) {
+        } else if (appEscolhido.equals("tlg")) {
             smi = new Telegram();
         } else {
             System.out.println("App invalido");
