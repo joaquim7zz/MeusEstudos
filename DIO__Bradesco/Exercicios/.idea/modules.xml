@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Collection-Framework/Collection-Framework.iml" filepath="$PROJECT_DIR$/Collection-Framework/Collection-Framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ContaBanco/ContaBanco.iml" filepath="$PROJECT_DIR$/ContaBanco/ContaBanco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Exercicios.iml" filepath="$PROJECT_DIR$/.idea/Exercicios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/controle-de-candidatos/controle-de-candidatos.iml" filepath="$PROJECT_DIR$/controle-de-candidatos/controle-de-candidatos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/get-started/get-started.iml" filepath="$PROJECT_DIR$/get-started/get-started.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Collection-Framework/out/out.iml" filepath="$PROJECT_DIR$/Collection-Framework/out/out.iml" />
+      <module fileurl="file://$PROJECT_DIR$/records/records.iml" filepath="$PROJECT_DIR$/records/records.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sistema-smart-tv/sistema-smart-tv.iml" filepath="$PROJECT_DIR$/sistema-smart-tv/sistema-smart-tv.iml" />
+    </modules>
+  </component>
+</project>

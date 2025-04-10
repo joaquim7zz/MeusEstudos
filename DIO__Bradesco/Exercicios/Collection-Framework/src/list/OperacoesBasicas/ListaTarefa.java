@@ -45,6 +45,8 @@ public class ListaTarefa {
         while (lista.obterNumeroTotalDeTarefas() < 4) {
             System.out.println("Adicione uma tarefa que deseja adicionar: ");
             lista.adicionarTarefa(sc.next());
+
+            sc.close();
         }
 
 //        lista.adicionarTarefa("joaquim");
