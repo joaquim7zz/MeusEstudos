@@ -1,49 +1,49 @@
-# 📚 Meu Repositório de Estudos  
-*Um cérebro virtual para um dev esquecido*  
+<h1 align="center">📚 Meu Repositório de Estudos</h1>
 
-Este repositório é minha central de aprendizado e experimentação. Ele serve como uma extensão da minha memória, onde registro tudo o que estudo, pratico e desenvolvo. Se você também está nessa jornada ou quer aprender algo novo, seja bem-vindo! 🚀  
+<p align="center">
+  Um cérebro virtual para um dev esquecido. <br>
+  Este repositório é minha central de aprendizado e experimentação. 
+  Ele serve como uma extensão da minha memória, onde registro tudo o que estudo, pratico e desenvolvo. <br>
+  Se você também está nessa jornada ou quer aprender algo novo, seja bem-vindo! 🚀
+</p>
 
-## Estrutura do Repositório
+<hr>
 
-### Alura
-- **Descrição**: Esta pasta contém todos os materiais, projetos relacionados aos cursos que fiz na plataforma Alura.
-- **Conteúdo**: Cursos de programação e desenvolvimento web.
+<h2>📁 Estrutura do Repositório</h2>
 
-### Certificados
-- **Descrição**: Aqui estão armazenados todos os certificados de conclusão dos cursos que realizei em diversas plataformas.
-- **Conteúdo**: Certificados de cursos da Alura, OneBitCode, Oracle Next Education, e outros.
+<h3>🔹 One - Oracle Next Education (G8)</h3>
+<ul>
+  <li><strong>Descrição:</strong> Tudo o que foi estudado durante a formação Oracle Next Education (ONE) está organizado aqui.</li>
+  <li><strong>Conteúdo:</strong> Programação, desenvolvimento web e back-end.</li>
+</ul>
 
-### Curso em Vídeo
-- **Descrição**: Esta pasta contém os materiais e projetos dos cursos que fiz na plataforma Curso em Vídeo.
-- **Conteúdo**: Cursos JavaScript, HTML e CSS.
+<h3>🔹 Dio - Bradesco</h3>
+<ul>
+  <li><strong>Descrição:</strong> Repositório com os conteúdos estudados durante o bootcamp promovido pela DIO e Bradesco.</li>
+  <li><strong>Conteúdo:</strong> Foco em programação Java e fundamentos de desenvolvimento.</li>
+</ul>
 
-### One - Oracle Next Education (G8)
-- **Descrição**: Tudo o que foi estudado durante a formação Oracle Next Education (ONE) está organizado aqui.
-- **Conteúdo**: Conteúdos de programação, desenvolvimento web e Back-end.
+<h3>🔹 UniCesumar - Engenharia de Software</h3>
+<ul>
+  <li><strong>Descrição:</strong> Projetos e materiais da minha graduação em Engenharia de Software na UniCesumar.</li>
+  <li><strong>Conteúdo:</strong> Programação, banco de dados, engenharia de software e disciplinas correlatas.</li>
+</ul>
 
-### Dio - Bradesco
-- **Descrição**: Tudo o que foi estudado durante a formação algum bootcamp está organizado aqui.
-- **Conteúdo**: Conteúdos de programação em Java.
+<hr>
 
-### OneBitCode
-- **Descrição**: Esta pasta contém os materiais e projetos do curso da OneBitCode.
-- **Conteúdo**: Cursos de desenvolvimento web, JavaScript e outros.
+<h2>🧭 Como Navegar</h2>
+<p>
+  Cada pasta está organizada por curso ou disciplina, contendo subpastas com projetos, materiais e anotações. <br>
+  Explore livremente e aproveite qualquer conteúdo que possa te ajudar!
+</p>
 
-### UniCesumar - Engenharia de Software
-- **Descrição**: Aqui estão organizados todos os materiais e projetos relacionados à minha graduação em Engenharia de Software na UniCesumar.
-- **Conteúdo**: Disciplinas de programação, banco de dados, engenharia de software, e outras áreas relacionadas.
+<hr>
 
-## Como Navegar
+<h2>📬 Contato</h2>
+<p>
+  Se quiser trocar uma ideia ou tirar dúvidas, é só me chamar:
+</p>
+<ul>
+  <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/joaquim7zz/" target="_blank">Joaquim Sena</a></li>
 
-Cada pasta contém subpastas organizadas por curso ou disciplina, com os respectivos materiais, projetos e anotações. Sinta-se à vontade para explorar e utilizar qualquer conteúdo que possa ser útil para você.
-
-## Contato
-
-Se você tiver alguma dúvida ou quiser entrar em contato, sinta-se à vontade para me enviar uma mensagem.
- 
-**LinkedIn**: [Joaquim Sena](https://www.linkedin.com/in/joaquim7zz/)  
-**GitHub**: [joaquim7zz](https://github.com/joaquim7zz)
-
----
-
-**Nota**: Este repositório está em constante atualização, conforme avanço em meus estudos e cursos.
+</ul>
