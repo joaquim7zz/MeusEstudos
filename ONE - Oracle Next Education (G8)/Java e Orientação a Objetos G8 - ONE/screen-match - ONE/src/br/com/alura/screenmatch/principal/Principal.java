@@ -1,3 +1,6 @@
+package br.com.alura.screenmatch.principal;
+import java.util.ArrayList;
+
 import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
 import br.com.alura.screenmatch.modelo.Episodio;
@@ -8,9 +11,7 @@ public class Principal {
     public static void main(String[] args) {
 
         // Criação de objeto Filme
-        Filme homiDeFerro = new Filme();
-        homiDeFerro.setNome("homi de ferro");
-        homiDeFerro.setAnoDeLancamento(2010);
+        Filme homiDeFerro = new Filme("Homi de ferro", 2010);
         homiDeFerro.setDuracaoEmMinutos(135);
         homiDeFerro.setIncluidoNoPlano(true);
         homiDeFerro.exibeFichaTecnica();
@@ -19,18 +20,14 @@ public class Principal {
         homiDeFerro.avalia(9);
 
         // Outro objeto Filme
-        Filme miranha = new Filme();
-        miranha.setNome("Miranha sem casa");
-        miranha.setAnoDeLancamento(2020);
+        Filme miranha = new Filme("Miranha sem casa", 2020);
         miranha.setDuracaoEmMinutos(220);
         miranha.setIncluidoNoPlano(true);
 
         System.out.println("Média de avaliações do filme: " + homiDeFerro.pegaMedia());
 
         // Objeto Serie
-        Serie lost = new Serie();
-        lost.setNome("Perdido");
-        lost.setAnoDeLancamento(2000);
+        Serie lost = new Serie("perdido", 200);
         lost.exibeFichaTecnica();
         lost.setTemporadas(10);
         lost.setEpisodiosPorTemporada(10);
@@ -54,5 +51,18 @@ public class Principal {
         episodio.setSerie(lost);
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);  
+
+        Filme outroFilme = new Filme("Dogville", 2003); 
+        outroFilme.setDuracaoEmMinutos(200);
+        outroFilme.avalia(10);
+
+        ArrayList <Filme> listaDeFilmes = new ArrayList<>(); 
+        listaDeFilmes.add(outroFilme);
+        listaDeFilmes.add(homiDeFerro);
+        listaDeFilmes.add(miranha);
+        System.out.println("Tamanho da lista " + listaDeFilmes.size());
+        System.out.println("Primeiro filme " + listaDeFilmes.get(0).toString());
+        System.out.println(listaDeFilmes.toString());
+
     }
 }
